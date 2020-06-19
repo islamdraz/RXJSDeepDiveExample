@@ -54,8 +54,8 @@ export class ProductService {
             searchKey: [product.productName],
           } as Product)
       )
-    )
-    //  tap((res) => console.log(res))
+    ),
+    tap((res) => console.log(res))
   );
 
   // getProducts(): Observable<Product[]> {
